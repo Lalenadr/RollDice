@@ -5,6 +5,9 @@ document.getElementById('diceRollerbutton').onclick = diceRoll;
 function diceRoll() {
   var random1 = Math.floor((Math.random() * 6) + 1);
   var random2 = Math.floor((Math.random() * 6) + 1);
+
+  document.getElementById("placeholder1").style.animation = "shake 0.4s";
+  document.getElementById("placeholder2").style.animation = "shake 0.4s";
   
   document.getElementById("placeholder1").innerHTML = (random1);
   document.getElementById("placeholder2").innerHTML = (random2);
